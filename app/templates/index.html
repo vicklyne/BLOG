@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{% block content %}
+<div class="container">
+        <div class="row">
+                  <img src="./static/photos/coverpic.jpg" class="cover" style="width:100%"/>
+            </div>
+
+    <div class="row col-sm-9 col-xs-9 col-md-8 col-lg-8">
+            <h2>THOUGHTS</h2>
+            <p>Its well past midnight, thoughts after thoughts haunt my heart</p>
+            <p>Was it the best solution?</p>
+            <p>Leting go was not my favorite part of it all</p>
+            <p>It all comes down to the reason!</p>
+            <br><br>
+            <p>Maybe someday the reasons will be clear</p>
+            <p>Maybe someday I will understand</p>
+            <p>Maybe someday this will get better</p>
+            <p>Maybe someday things will change</p>
+            <p>Maybe just maybe....</p>
+            <br><br>
+            <p>Did you see how happy they were?</p>
+            <p>Did you hear them whisper?</p>
+            <p>I hoped that you would come to my rescue</p>
+            <p>I didnt believe you</p>
+            <p>But I still placed my hope on you</p>
+            <br>
+            <p><b>To be continued.....</b></p>
+            </div>
+    <div class="row col-sm-1 col-xs-1 col-md-1 col-lg-1" ></div>
+    <div class="row col-sm-2 col-xs-2 col-md-3 col-lg-3" style="border-left: 3px black">
+        <div class="button btn btn-info">
+            <a href="/subscribe">Subscribe Here</a>
+        </div>
+            <h2>View Blogs</h2>
+                {{macro.displayBlog(poems)}}
+        </div>
+    </div>
+    <div class="footer" style="background-color:black; color:aliceblue; font-size:20px;">
+            <div class="row" style="padding-top:5%">
+                    <div class="col-md-2 col-lg-2"></div>
+                    <div class="col-md-4 col-lg-4">
+                        <p>&copy; Copyright 2018 <a href="VickyMutai@github.com">Victoria Mutai</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <p>Contact me at: <a href="mailto:vicky.mutai@gmail.com">My Email</a></p>
+                        <p>Phone Number: 0716889165</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2"></div>
+                </div>
+            </div>
+{% endblock %}
